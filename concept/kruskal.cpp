@@ -7,7 +7,7 @@
 
 using namespace std;
 
-int check[7];   //노드 연결
+int check[8];   //노드 부모
 
 class Edge {
 public:
@@ -59,7 +59,7 @@ int main() {
     //가중치대로 오름차순 정렬
     sort(v.begin(), v.end());
     //각 정점의 부모를 본인으로 초기화
-    for (int i = 0; i < 7; i++) {
+    for (int i = 1; i < 8; i++) {
         check[i] = i;
     }
     int sum = 0;
